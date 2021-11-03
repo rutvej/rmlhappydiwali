@@ -114,7 +114,7 @@ img {
 
     display: block;
     margin-left: 250px !important;
-    margin-top:800px !important;
+    margin-top:00px !important;
     width: 50% !important;
     height: auto !important;
 
@@ -122,8 +122,8 @@ img {
 
   </style>
   <body>
-      <img class="how-to-use" src="https://routemobile.com/wp-content/themes/routemobileweb18/images/Logo.png" >
-      <p class='how-to-use'>Wish You <br> Happy diwali <br></p>
+      <!-- <img class="how-to-use" src="https://routemobile.com/wp-content/themes/routemobileweb18/images/Logo.png" > -->
+      <p class='how-to-use'>Wish You <br> Happy Diwali <br> From Route Mobile</p>
       <small class='how-to-use'>Tap anywhere</small>
       
       <canvas></canvas>
@@ -265,7 +265,7 @@ class Particle {
     //distance == the distance from the center
     //or we can say its the radius of the ring at the begenning
     this.justExplose = justExplose;
-    this.radius = randomOfRange(1.5 * distance, 2 * distance);
+    this.radius = randomOfRange(1 * distance, 1.5 * distance);
     this.velocity = {};
     this.velocity.x = cos(angle) * distance * randomOfRange(0.2, 0.5);
     this.velocity.y = sin(angle) * distance * randomOfRange(0.5, 0.5);
