@@ -98,18 +98,24 @@ p {
     align-items: center;
     justify-content: center; 
     line-height: 180%;
+    background: -webkit-linear-gradient(rgb(233, 44, 44), rgb(28, 97, 201));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 }
 
 small {
 
     font-size: 50px; 
+    margin-top: 90%;
 
 }
 
   </style>
   <body>
-      <p class='how-to-use'>Wish You <br> Happy diwali <br><small>Tap anywhere</small></p>
+      <img class="how-to-use">
+      <p class='how-to-use'>Wish You <br> Happy diwali <br></p>
+      <small class='how-to-use'>Tap anywhere</small>
       
       <canvas></canvas>
   
@@ -250,7 +256,7 @@ class Particle {
     //distance == the distance from the center
     //or we can say its the radius of the ring at the begenning
     this.justExplose = justExplose;
-    this.radius = randomOfRange(0.04 * distance, 0.4 * distance);
+    this.radius = randomOfRange(1 * distance, 1.5 * distance);
     this.velocity = {};
     this.velocity.x = cos(angle) * distance * randomOfRange(0.2, 0.5);
     this.velocity.y = sin(angle) * distance * randomOfRange(0.5, 0.5);
